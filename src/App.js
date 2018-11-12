@@ -48,13 +48,13 @@ class Clock extends Component {
         </div>
         <div className="clock-hands-container">
           <div className="hour-hand-container" style={{transform: 'rotate(' + hourInDegrees + 'deg)'}}>
-            <div className="hour-hand"></div>
+            <div className="hand hour-hand"></div>
           </div>
           <div className="minute-hand-container" style={{transform: 'rotate(' + minuteInDegrees + 'deg)'}}>
-            <div className="minute-hand"></div>
+            <div className="hand minute-hand"></div>
           </div>
           <div className="second-hand-container" style={{transform: 'rotate(' + secondInDegrees + 'deg)'}}>
-            <div className="second-hand"></div>
+            <div className="hand second-hand"></div>
           </div>
         </div>
       </div>
