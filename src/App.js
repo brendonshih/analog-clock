@@ -28,10 +28,6 @@ class Clock extends Component {
   }
 
   render() {
-
-    //let minuteInDegrees = 0;
-    //let hourInDegrees = 90;
-    //let secondInDegrees = 180;
     let minuteInDegrees = ((this.state.date.getHours() * 60) + this.state.date.getMinutes()) * 6;
     let hourInDegrees = (((this.state.date.getHours() % 12) * 60 + this.state.date.getMinutes()) / 720) * 360;
     let secondInDegrees = ((this.state.date.getMinutes() * 60) + this.state.date.getSeconds()) * 6;
